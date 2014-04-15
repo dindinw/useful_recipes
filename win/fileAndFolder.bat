@@ -1,6 +1,6 @@
 @echo off
 
-
+for /f %%I in ('dir /b .') do echo %%~pI%%I
 echo The batchfile's drive letter : %~d0   
 echo The batchfile's path (without the drive letter) : %~p0   
 echo The batchfile's path 1 : %~dp0   
